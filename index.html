@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Arta Salahesh - Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/e1998105ca.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <nav>
+          <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="header-info">
+          <p>Full Stack Developer</p>
+          <h1>
+            Hello , I am <br><span>Arta Salahesh</span><br />A Full Stack Developer
+          </h1>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section id="about">
+        <div class="container">
+          <div class="image">
+            <img src="img/bc.jpg" alt="Arta Salahesh" />
+          </div>
+          <div class="about-me">
+            <h1 class="subtitle">About Me</h1>
+            <p>
+                Arta Salahesh is a polyglot software engineer with ten years of experience designing and implementing object-oriented, scalable, resilient, elastic, and message-driven applications in Agile environments using SCRUM methodologies in high-tech companies.
+                My professional skills are Java, Spring, Spring Boot, RESTful API, Hibernate, Docker, Oracle, MongoDB, and Quarkus.
+                Learning and working with Docker for dockerizing microservices, Kafka for event sourcing and messaging, Oracle, and MongoDB for persisting and maintaining data.
+                Also have Hands-on experience with ReactJs, NextJs, and Bootstrap.
+            </p>
+            <hr />
+            <div class="about-tab">
+              <p
+                class="about-tab-links active"
+                onclick="openContentTab('skills')"
+              >
+                Skills
+              </p>
+              <p class="about-tab-links" onclick="openContentTab('experience')">
+                Experience
+              </p>
+              <p class="about-tab-links" onclick="openContentTab('education')">
+                Education
+              </p>
+            </div>
+            <div class="about-contents active" id="skills">
+              <ul>
+                <li>
+                  <span>Backend Development</span><br />
+                  Implementing Enterprise Application By Java Programming
+                  Language
+                </li>
+                <li>
+                  <span>System Design</span> <br />Designing Distributed Systems
+                </li>
+                <li>
+                  <span>Web Development</span> <br />Implementing Web
+                  Application Using React
+                </li>
+
+                <li>
+                  <span>Mobile Development</span> <br />
+                  Designing Your Web And Mobile Applications
+                </li>
+                <li>
+                  <span>UI/UX</span> <br />
+                  Designing Your Web And Mobile Applications
+                </li>
+              </ul>
+            </div>
+            <div class="about-contents" id="experience">
+              <ul>
+                <li>
+                  <span>Senior Software Developer - Dotin </span> <br />
+                  Dotin (Datis Arian Qeshm) is one of the leading high-tech software companies that produce various financial applications and services ranging from mobile to enterprise applications, with around 900 employees.
+                </li>
+                <li>
+                  <span>Senior Java Developer - Informatics Services Corporation</span> <br />
+                  Informatics Services Corporation is an essential software company for banking services in Iran with over 1000 employees. The company is the backbone of the country's banking services, which defines and implements the required infrastructure of the central bank software and services.
+                </li>
+                <li>
+                    <span>Senior Java Developer - Sadad</span> <br />
+                    The company is a financial software production company with over 900 employees, which implements and provides banking systems, especially the requirements of Bank Melli Iran, the biggest bank in Iran.
+                  </li>
+              </ul>
+            </div>
+            <div class="about-contents" id="education">
+              <ul>
+                <li>
+                  <span>Web And Mobile Development</span><br />
+                  Langara Colledge
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="portfolio">
+        <div class="container">
+          <h1 class="subtitle">My Work</h1>
+          <div class="work-items">
+            <div class="work">
+              <img src="img/dotin.jpg" alt="Dotin" />
+              <h2>Dotin</h2>
+              <h3>Key Achievements</h3>
+              <ul>
+                <li>
+                  Introduced a solution to find the problematic transactions of
+                  the switch banking system by providing the correlation
+                  identifier.
+                </li>
+                <li>
+                  Built more scalable, fault-tolerant, testable, resilient
+                  services by aiding the DevOps team with the requirements to
+                  dockerize the card management services.
+                </li>
+                <li>
+                    Implemented non-blocking, asynchronous, and event-driven infrastructure using the CompletableFuture, Server sent events, and Vert.x framework.
+                </li>
+              </ul>
+              <a href=""></a>
+            </div>
+            <div class="work">
+              <img src="img/khadamat.png" alt="Khadamat" />
+              <h2>Informatics Corporation</h2>
+              <h3>Key Achievements</h3>
+              <ul>
+                <li>
+                    Collaborated with the team to enhance the traceability of the banking and OTP system with more than 40 million users by utilizing Prometheus, Grafana, Elasticsearh, fluent.d, and Kibana, which helped us trace the bottlenecks and improve the responsiveness of the system. 
+                </li>
+                <li>
+                    Implemented the first version of the Banking NFC payment application, which helps us test the services and, from the feedback, redefine and improve the services.
+                </li>
+            </div>
+            <div class="work"><img src="img/sadad.jpg" alt="" />
+                <h2>Sadad</h2>
+                <h3>Key Achievements</h3>
+                <ul>
+                  <li>
+                    Developed the flow of requesting a loan using the spring framework, hibernate, and DB2 database and designed the system based on DDD concepts which make the application scalable, robust, and testable. 
+                  </li>
+                  <li>
+                    Implemented the dynamic forms with the help of AngularJs directives and hibernate inheritance concepts that change the form fields easily by the type of the loan and persist the data efficiency, which improved the responsibility of the front-end and resulted in more client satisfaction.                  </li></div>
+          </div>
+        </div>
+      </section>
+      <section id="contact">
+        <div class="container">
+            <div class="contact">
+                <h1 class="subtitle">Contact Me</h1>
+                <p> <i class="fa fa-envelope"></i> artssalahesh@gmail.com</p>
+                <p> <i class="fa fa-phone-square-alt"></i> +12368088870</p>
+                <div class="social">
+                    <a href=""><i class="fab fa-facebook"></i></a>
+                    <a href=""><i class="fab fa-linkedin"></i></a>
+                    <a href=""><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <a href="https://www.dropbox.com/preview/CV/Arta-Salahesh_English-latest.pdf" class="btn">
+                Download My Resume
+            </a>
+        </div>
+      </section>
+    </main>
+    <footer>
+        <p>copyright &copy; Arta Salahesh</p>
+    </footer>
+  </body>
+
+  <script src="./index.js"></script>
+</html>

@@ -1,0 +1,378 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Poppins:wght@200&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins',san-serif;
+  box-sizing: border-box;
+}
+
+h1,h2,h3{
+    font-family: 'Inter';
+}
+
+body {
+  background: #080808;
+  color: #fff;
+}
+
+header {
+  width: 100%;
+  height: 100vh;
+  background-image: url(img/cover.jpg);
+  background-size: cover;
+  background-position: 50% 20%;
+  border-bottom-left-radius: 3em;
+  border-bottom-right-radius: 3em;
+}
+
+.container {
+  padding: 10px 10%;
+  display: gird;
+  align-items: left;
+  justify-content: space-between;
+  grid-template-columns: 1fr 1fr;
+}
+
+
+
+nav {
+  text-align: right;
+  background-color: rgba(109, 106, 93, 0.632);
+  border-radius: 1em;
+  -webkit-border-radius: 1em;
+  -moz-border-radius: 1em;
+  -ms-border-radius: 1em;
+  -o-border-radius: 1em;
+  margin: 0.5em;
+}
+
+nav ul li {
+  display: inline-block;
+  margin: 10px 20px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  position: relative;
+}
+
+nav ul li a::after {
+  content: "";
+  width: 0;
+  height: 0.25em;
+  background: orange;
+  position: absolute;
+  left: 0;
+  bottom: -0.5em;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+}
+
+nav ul li a:hover::after {
+  width: 100%;
+}
+
+.header-info {
+  margin-top: 0.5em;
+  font-size: 1.5rem;
+  margin-left: 0.5em;
+  background-color: rgba(83, 80, 70, 0.548);
+  width: 40%;
+  border-radius: 1em;
+  -webkit-border-radius: 1em;
+  -moz-border-radius: 1em;
+  -ms-border-radius: 1em;
+  -o-border-radius: 1em;
+  padding: 1em;
+}
+
+.header-info h1 {
+  font-size: 2rem;
+  margin-top: 0.5em;
+}
+
+.header-info h1 span {
+  color: orange;
+}
+
+#about {
+  padding: 3em 0;
+  background: linear-gradient(to bottom, black, #1d1d1de7);
+}
+
+#about .container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: center;
+}
+
+#about .about-me {
+  text-align: center;
+  padding-left: 3em;
+}
+
+#about .about-me .subtitle {
+    margin-top:1em;
+  }
+
+#about .image img {
+  width: 100%;
+  height: 100%;
+  border-radius: 1em;
+  -webkit-border-radius: 1em;
+  -moz-border-radius: 1em;
+  -ms-border-radius: 1em;
+  -o-border-radius: 1em;
+}
+
+#about .subtitle {
+  font-size: 2rem;
+  font-weight: 500;
+  color: white;
+}
+
+.about-tab {
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin: 0.5em 0.5em;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-tab .about-tab-links {
+  margin: 0 1em;
+  font-size: 1em;
+  font-weight: 700;
+  position: relative;
+  text-align: center;
+  cursor: pointer;
+}
+
+#about .about-tab .about-tab-links::after {
+  content: "";
+  width: 0%;
+  height: 0.25em;
+  background-color: orange;
+  position: absolute;
+  bottom: -0.5em;
+  left: 0.5em;
+  transition: 2s;
+  -webkit-transition: 2s;
+  -moz-transition: 2s;
+  -ms-transition: 2s;
+  -o-transition: 2s;
+}
+
+#about .about-tab .about-tab-links.active::after {
+  width: 80%;
+}
+
+.about-me p {
+  margin: 0.5em 0;
+}
+
+.about-me .about-contents {
+  margin: 1em 0;
+  text-align: left;
+}
+
+.about-me .about-contents ul {
+  list-style: none;
+}
+
+.about-me .about-contents ul li {
+  margin: 2px 0;
+}
+
+.about-me .about-contents ul li span {
+  color: lightsalmon;
+  font-size: 1rem;
+}
+
+.about-me .about-contents {
+  display: none;
+}
+
+.about-me .about-contents.active {
+  display: block;
+}
+
+#portfolio {
+  padding: 2em 0;
+  background-color: #1d1d1de7;
+  width: 100%;
+  
+}
+
+.work-items {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20em, 1fr));
+  gap: 1em;
+  margin-top: 1em;
+}
+
+#portfolio .container {
+  margin: auto;
+}
+
+#portfolio .work {
+  background-color: rgba(184, 135, 11, 0.763);
+  border-radius: 0.5em;
+  position: relative;
+  overflow: hidden;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+}
+
+#portfolio .work img {
+  width: 100%;
+  height: 30vh;
+  border-radius: 0.5em;
+  -webkit-border-radius: 0.5em;
+  -moz-border-radius: 0.5em;
+  -ms-border-radius: 0.5em;
+  -o-border-radius: 0.5em;
+}
+
+#portfolio .subtitle {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 500;
+  color: white;
+  border-radius: 1em;
+  -webkit-border-radius: 1em;
+  -moz-border-radius: 1em;
+  -ms-border-radius: 1em;
+  -o-border-radius: 1em;
+}
+
+#portfolio .work {
+  text-align: center;
+}
+
+#portfolio .work ul{
+    padding: 1em 0.5em;
+    list-style-type: none;
+}
+
+#contact {
+    text-align: center;
+    background:linear-gradient(to bottom, #1d1d1de7, #3b3b3be7 )
+}
+
+#contact .subtitle {
+    font-size: 2rem;
+    font-weight: 500;
+    color: white;
+  }
+
+  #contact p i{
+    color: orange;
+  }
+
+  #contact .social i{
+    color: darksalmon;
+  }
+
+  .btn {
+    display: inline-block;
+    margin: 3em auto;
+    width: fit-content;
+    border: 1px solid darkgoldenrod;
+    padding: 0.25em 2em;
+    border-radius: 1em;
+    -webkit-border-radius: 1em;
+    -moz-border-radius: 1em;
+    -ms-border-radius: 1em;
+    -o-border-radius: 1em;
+    text-decoration: none;
+    background-color:orange;
+    color: white;
+}
+
+
+  footer{
+    background-color: #3b3b3be7;
+    text-align: center;
+  }
+
+@media screen and (max-width: 768px) {
+    nav ul {
+        text-align: center;
+    }
+    
+    .container{
+        display:grid;
+        grid-template-columns: 1fr;
+        padding: 0;
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    #about .container {
+        display: grid;
+        grid-template-columns: 1fr;
+      }
+
+      #about .about-me{
+        padding: 0;
+      }
+
+      .header-info p,h1{
+        text-align: center;
+        
+      }
+
+      .header-info {
+        margin-top: 100%;
+        font-size: 1.5rem;
+        width: 100%;
+        padding: 1em;
+      }
+}
+
+@media screen and (max-width: 390px) {
+    nav ul {
+        text-align: center;
+    }
+    
+    .container{
+        display:grid;
+        grid-template-columns: 1fr;
+        padding: 0;
+        width: 90%;
+        margin: 0 auto;
+        padding: 0.5em 0;
+    }
+
+    #about .container {
+        display: grid;
+        grid-template-columns: 1fr;
+      }
+
+      #about .about-me{
+        padding: 0;
+      }
+
+      .header-info p,h1{
+        text-align: center;
+        
+      }
+
+      .header-info {
+        margin-top: 100%;
+        font-size: 1.5rem;
+        width: 100%;
+        padding: 1em;
+      }
+}
