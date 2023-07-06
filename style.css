@@ -123,6 +123,7 @@ nav ul li a:hover::after {
 #about .image img {
   width: 100%;
   height: 105vh;
+  
   border-radius: 1em;
   -webkit-border-radius: 1em;
   -moz-border-radius: 1em;
